@@ -2,7 +2,8 @@ package Pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.*;
-import static helpers.Wait.*;
+import static helpers.Wait.waitUntilVisible;
+import static helpers.Wait.waitUntilClickable;
 
 public class AddCustomerMenu extends ManagerPage{
 
@@ -23,7 +24,6 @@ public class AddCustomerMenu extends ManagerPage{
     }
     @Step("Click on Add customer button")
     public void AddCustomerButton_click(){
-        waitUntilVisible(driver, AddCustomerButtonLoc);
         AddCustomerButton = driver.findElement(AddCustomerButtonLoc);
         waitUntilClickable(driver, AddCustomerButton);
         AddCustomerButton.click();

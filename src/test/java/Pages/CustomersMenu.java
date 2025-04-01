@@ -7,7 +7,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.Arrays;
 import java.util.List;
-import static helpers.Wait.*;
+import static helpers.Wait.waitUntilVisible;
+import static helpers.Wait.waitUntilClickable;
 public class CustomersMenu extends ManagerPage{
 
     By RowsLoc = By.xpath("//table[contains(@class, 'table')]/tbody//tr");

@@ -6,7 +6,6 @@ import io.qameta.allure.SeverityLevel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
 public class SortNamesTest extends BaseTest{
     @Test(description = "Test of Sorting Names", priority = 0)
     @Severity(SeverityLevel.CRITICAL)
